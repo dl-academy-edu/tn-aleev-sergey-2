@@ -1,0 +1,30 @@
+.blog-cards__item {
+    width: 380px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    &:nth-child(3n+2) {
+        margin: 0 20px;
+    }
+}
+
+.blog-cards__date {
+    padding-top: 20px;
+    padding-bottom: 7px;
+    font-size: 16px;
+    line-height: 22px;
+    color: #818181;
+}
+.blog-cards__item h2 {
+    display: flex;
+    padding-bottom: 15px;
+    font-size: 24px;
+    line-height: 31px;
+    text-transform: none;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+.blog-cards__item p {
+    font-size: 18px;
+    line-height: 25px;
+}

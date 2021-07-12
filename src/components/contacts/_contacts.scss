@@ -1,0 +1,15 @@
+/* CONTACTS */
+
+.contacts {
+    position: relative;
+    & h2 {
+        margin-bottom: 20px;
+    }
+    & p {
+        padding-bottom: 102px;
+    }
+    &__map {
+        position: absolute;
+        top: 127px ;
+    }
+}

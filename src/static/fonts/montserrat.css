@@ -1,0 +1,18 @@
+@font-face {
+    font-family: Montserrat;
+    src: url(Montserrat-Bold.ttf);
+    font-style: sans-serif;
+    font-weight: 700;
+}
+@font-face {
+    font-family: Montserrat-semibold;
+    src: url(Montserrat-SemiBold.ttf);
+    font-style: sans-serif;
+    font-weight: 600;
+}
+@font-face {
+    font-family: Montserrat-th;
+    src: url(Montserrat-Thin.ttf);
+    font-style: sans-serif;
+    font-weight: 300;
+}

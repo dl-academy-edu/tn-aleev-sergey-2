@@ -1,0 +1,43 @@
+.animation {
+    width: 100vw;
+    height: 768px;
+    margin-bottom: 70px;
+    box-sizing: border-box;
+    transform: translateX(-15%);
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    
+}
+.town {
+    position: absolute;
+}
+.man {
+    display: flex;
+    position: absolute;
+    margin-left: 365px;
+    bottom: 52%;
+    max-width: 100%;
+}
+.man svg {
+    position: absolute;
+}
+.woman {
+    display: flex;
+    position: absolute;
+    margin-left: 250px;
+    bottom: 6.1%;
+    height: 267px;
+}
+.woman svg:nth-child(2) {
+    display: flex;
+    top: 65%;
+}
+.woman svg {
+    position: absolute;
+}
+.lanterns {
+    position: absolute;
+    left: 45%;
+    bottom: 25%;
+}

@@ -1,0 +1,38 @@
+/* PAGINATION */
+
+
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 60px;
+    & path:hover{
+      stroke: #C29974;
+      stroke-opacity: 1;
+      cursor: pointer;
+    }
+    & path:active {
+      stroke: #C29974;
+      opacity: 0.5;
+    }
+}
+.pagination__numbers {
+
+  display: flex;
+  & li {
+    font-family: Montserrat;
+    line-height: 20px;
+  }
+  & li:not(:last-child) {
+    margin-right: 64px;
+  }
+  & li:first-child {
+    line-height: 20px;
+    color: #C29974;
+    margin-right: 67px;
+  }
+  & li:hover {
+    color: #8F8383;
+    cursor: pointer;
+  }
+}

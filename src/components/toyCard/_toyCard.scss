@@ -1,0 +1,51 @@
+.toy-card {
+    position: relative;
+}
+.hover-text {
+    font-family: Montserrat;
+    word-wrap: break-word;
+    font-size: 26px;
+    line-height: 29px;
+    width: 207px;
+    height: 207px;
+    background: #E5EAF8;
+    opacity: 0;
+    position: absolute;
+    left: 87px;
+    top: 89px;
+    z-index: 2;
+    text-shadow: 0px 0px 40px rgba(147, 3, 3, 0.25);
+    text-transform: uppercase;
+    padding: 82px 12px 0 11px;
+}
+
+.hover-text:hover{
+    background:rgba(229, 234, 248, 0.9);
+    opacity: 1;
+    cursor: pointer;
+}
+.hover-text:active {
+    background:rgba(229, 234, 248, 0.67);
+    opacity: 1;
+}
+.products .container {
+    flex-wrap: wrap;
+    margin: 0px 20px;
+}
+
+.product-name {
+    font-family: Open-Sans;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 15px;
+}
+.price {
+    font-family: OpenSans-bold;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    padding-bottom: 25px;
+}

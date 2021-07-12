@@ -1,31 +1,26 @@
-main.index-main {
-  padding: 30px 0;
+
+
+/* about_contacts */
+
+.about_contacts {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+    
 }
-
-.parallax-card {
-  max-width: 300px;
-
-  &__wrapper-img {
-    position: relative;
-    overflow: hidden;
-    padding-bottom: 100%;
-  }
-  &__img {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    max-width: none;
-    height: 100%;
-    min-width: 100.5%;
-  }
-  &__description {
-    background-color: #ff5722;
-    padding: 20px 10px;
-    text-align: center;
-    color: #fff;
-  }
-  &__paragraph {
-    margin: 0;
-  }
+.about,
+.contacts {
+    display: flex;
+    flex-direction: column;
+    width: 543px;
+    background: #E1F0F7;
+    padding-left: 30px;
+    & h2 {
+        margin-top: -26px;
+    }
+    & p {
+        width: 483px;
+        line-height: 22px;
+    }
 }
