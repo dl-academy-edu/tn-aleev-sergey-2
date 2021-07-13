@@ -11,10 +11,10 @@ body {
     transform: translateX(-50%);
 }
 
-@keyframes animation-car1 { from {left:45%;} 48% {left:100%;} 48.01% {left:-16%;} 100% {left:45%;}};
-@keyframes animation-car2 { from {left:27%;} 73% {left:100%;} 73.01% {left:-13%;} 100% {left:27%;}};
-@keyframes animation-car3 { from {left:4%;} 80% {left:100%;} 80.01% {left:-16%;} 100%{left:4%}};
-@keyframes animation-car4 { from {left:82%;} 18% {left:100%;} 18.01% {left:-17%;} 100%{left:82%}};
+@keyframes animation-car1 { from {left:45%;} 45.83% {left:100%;} 45.84% {left:-20%;} 100% {left:45%;}}
+@keyframes animation-car2 { from {left:27%;} 60.83% {left:100%;} 60.84% {left:-20%;} 100% {left:27%;}}
+@keyframes animation-car3 { from {left:4%;} 80% {left:100%;} 80.01% {left:-20%;} 100%{left:4%}}
+@keyframes animation-car4 { from {left:82%;} 15% {left:100%;} 15.01% {left:-20%;} 100%{left:82%}}
 @keyframes taxi { from {right:20%} 40%{} to {left:-20%}
 }
 .town {
@@ -65,12 +65,12 @@ margin-top: 3%;
 .car1 {
     bottom: 33%;
     left: 45%;
-    animation: 5s 2s linear animation-car1 infinite;
+    animation: 5s 2s linear animation-car infinite;
 }
 .car2 {
     left: 27%;
     bottom: 32%;
-    animation: 5s 1s linear animation-car2 infinite;
+    animation: 5s 2s linear animation-car infinite;
 }
 .car3 {
     bottom: 31%;
