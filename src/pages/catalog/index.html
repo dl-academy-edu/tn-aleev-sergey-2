@@ -2,26 +2,31 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-    />
     <link href="/common.css" rel="stylesheet" />
     <link href="style.css" rel="stylesheet" />
-    <link rel="stylesheet" href="/static/fonts/oswald.css" />
+    <link rel="stylesheet" href="/static/fonts/montserrat.css" />
+    <link rel="stylesheet" href="/static/fonts/openSans.css" />
+    <link rel="stylesheet" href="/static/fonts/crimsonText.css" />
     <link rel="shortcut icon" href="/static/images/favicon.ico">
-    <title>Каталог</title>
+    <title>Catalog</title>
   </head>
   <body>
     @@include('header/index.html')
-    <main class="catalog-main">
-      <div class="container">
-        <h1 class="title-block title-block_one">Каталог</h1>
-        <h2 class="title-block title-block_two">
-          Вы находитесь на странице каталога
-        </h2>
-      </div>
-    </main>
+    <main class="grid">
+      <section>
+          <div class="page-title">
+              <h1>Category Products</h1>
+                  <ul class="bread-crumbs no-dots">
+                      <li><a href="index.html">Home</a></li>
+                      <li>Catalog</li>
+                  </ul>
+          </div>
+      </section>
+      @@include('categoriesCatalog/index.html')
+      
+      @@include('catalogDescription/index.html')
+
+  </main>
     @@include('footer/index.html')
     <script src="index.js"></script>
   </body>

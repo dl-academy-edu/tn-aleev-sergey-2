@@ -1,0 +1,80 @@
+
+
+
+
+
+.input-selector {
+    display: flex;
+    padding: 42px 0 44px;
+}
+.input-selector h2 {
+    font-family: OpenSans-bold;
+    font-size: 16px;
+    line-height: 22px;
+    text-transform: none;
+    margin-bottom: 15px;
+}
+.input-selector button {
+    align-self: flex-start;
+}
+.slider-container {
+    margin-right: 94px;
+    width: 207px;
+    display: flex;
+    flex-direction: column;
+}
+
+.custom-slider {
+    margin-left: 5px;
+    width: 46px;
+    height: 4px;
+    background: #C29974;
+    position: relative;
+}
+
+.slider-numbers {
+    margin-top: 16px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.custom-slider::after,
+.custom-slider::before {
+    content: '';
+    width: 142px;
+    height: 4px;
+    background: #73757C;
+    position: absolute;
+    left: 46px;
+}
+.custom-slider::before {
+    top: -10px;
+    left: 34px;
+    width: 24px;
+    height: 24px;
+    border: 8px solid #C29974;
+    box-sizing: border-box;
+    border-radius: 50%;
+    background: #FFFFFF;
+    z-index: 1;
+}
+
+.checkbox-list {
+    margin-right: 124px;
+}
+.radio-list {
+    margin-right: 69px;
+}
+.radio-button-list {
+    margin-right: 60px;
+}
+.checkbox-list li:not(:last-child) {
+    margin-bottom: 15px;
+}
+.input-selector button {
+    margin-top: 37px;
+}
+
+.radio-list li:first-child {
+    margin-bottom: 10px;
+}

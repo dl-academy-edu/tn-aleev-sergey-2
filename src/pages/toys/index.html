@@ -2,26 +2,63 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-    />
     <link href="/common.css" rel="stylesheet" />
     <link href="style.css" rel="stylesheet" />
-    <link rel="stylesheet" href="/static/fonts/oswald.css" />
-    <link rel="shortcut icon" href="/static/images/favicon.ico" />
-    <title>Игрушки</title>
+    <link rel="stylesheet" href="/static/fonts/montserrat.css" />
+    <link rel="stylesheet" href="/static/fonts/openSans.css" />
+    <link rel="stylesheet" href="/static/fonts/crimsonText.css" />
+    <title>Toys</title>
   </head>
   <body>
     @@include('header/index.html')
-    <main class="toys-main">
-      <div class="container">
-        <h1 class="title-block title-block_one">Игрушки</h1>
-        <h2 class="title-block title-block_two">
-          Вы находитесь на странице игрушек
-        </h2>
-      </div>
-    </main>
+    <section class="page-title-container grid">
+      <h1 class="page-title">Toy for kids</h1>
+      <ul class="bread-crumbs no-dots">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="catalog.html">Catalog</a></li>
+          <li>Toys</li>
+      </ul>
+    </section>
+  <section class="toys-grid">
+    @@include('inputSection/index.html')
+  </section>
+<main class="grid">
+      <section class="products">
+          <ul class="no-dots container">
+            @@include('toyCard/index.html', {
+                "img":"../../static/images/toys/shark.png",
+                "price":"$60.00 USD",
+                "name":"sharky bean bag chair cover"
+            })
+            @@include('toyCard/index.html', {
+                "img":"../../static/images/toys/lamp.png",
+                "price":"$66.00 USD",
+                "name":"brass deco frames"
+            })
+            @@include('toyCard/index.html', {
+                "img":"../../static/images/toys/apron.png",
+                "price":"$60.00 USD",
+                "name":"cibo full apron"
+            })
+            @@include('toyCard/index.html', {
+                "img":"../../static/images/toys/gatcha machine.png",
+                "price":"$56.00 USD",
+                "name":"gatcha gatcha gumball machine"
+            })
+            @@include('toyCard/index.html', {
+                "img":"../../static/images/toys/candle.png",
+                "price":"$29.00 USD",
+                "name":"christmas advent scented candle"
+            })
+            @@include('toyCard/index.html', {
+                "img":"../../static/images/toys/light.png",
+                "price":"$56.00 USD",
+                "name":"tangle spinning tea light"
+            })
+          </ul>
+      </section>
+      @@include('paginationBar/index.html')
+</main>
     @@include('footer/index.html')
     <script src="index.js"></script>
   </body>

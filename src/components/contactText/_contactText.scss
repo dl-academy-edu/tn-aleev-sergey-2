@@ -1,0 +1,14 @@
+.contact-text {
+    margin-left: 120px;
+    width: 380px;
+}
+.contact-text p:not(:last-child) {
+    margin-bottom: 20px;
+}
+.contact-text p:nth-child(3) {
+    font-family: Montserrat-semibold;
+    font-size: 26px;
+    line-height: 34px;
+    text-transform: uppercase;
+    color: #C29974;
+}

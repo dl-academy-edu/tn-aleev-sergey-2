@@ -1,28 +1,347 @@
+
+
+
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.grid{
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1180px;
+  width: 100%;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+body {
+  font-family: Open-Sans;
+  color: #1E0606;
+  font-size: 16px;
+  line-height: 22px;
+}
+.hidden {
+  font-size: 0;
+  width: 0;
+  height: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.no-dots {
+  list-style-type:none;
+  padding: 0;
+  margin: 0;
+}
+.container {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+h1,h2 {
+  font-family: Montserrat;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+h2 {
+  font-size: 38px;
+  line-height: 46px;
+}
+h3 {
+  font-family: Crimson-Text-Italic;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 32px;
+}
+h1 {
+  line-height: 110%;
+}
+.page-title {
+  margin-top: 60px;
+}
+// BUTTON
+
+.button {
+  background: #000000;
+  display: block;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  font-family: OpenSans-bold;
+  line-height: 22px;
+  font-size: 16px;
+  border: none;
+  text-align: center;
+  cursor: pointer;
+  text-transform: uppercase;
+  padding: 9px 22px;
+  align-self: flex-start;
+  &:hover {
+    background: #C29974;
+  }
+  &:active {
+    background: #CFAF91;
+  }
+  &:disabled {
+    background: #C1C1C1;
+  }
+}
+
+/* FORM */
+
+fieldset {
+  border: none;
+}
+textarea {
+  resize: none;
+}
+
+/* BREAD-CRUMBS */
+
+.bread-crumbs {
+  display: flex;
+  margin-top: 15px;
+  margin-bottom: 50px;
+  font-family: Crimson-Text-Italic;
+  font-size: 20px;
+  line-height: 25px;
+  & li:last-child{
+    opacity: 0.5;
+  }
+}
+
+/* CUSTOM-INPUT*/
+
+.checkbox-list {
+  flex-direction: column;
+}
+.custom-checkbox,
+.custom-radio {
+  display: none;
+}
+
+.custom-checkbox + label,
+.custom-radio + label {
+  cursor: pointer;
+}
+.checkbox-list label,
+.radio-list label {
+  display: flex;
+  position: relative;
+  padding-left: 29px;
+}
+.radio-list label {
+  padding-left: 30px;
+}
+.checkbox-label::before,
+.checkbox-label::after,
+.radio-label::before,
+.radio-label::after {
+  content: '';
+  display: block;
+  position: absolute;
+  box-sizing: border-box;
+  left: 0;
+}
+.radio-label::before {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+.checkbox-label::before {
+  width: 19px;
+  height: 19px;
+  border-radius: 3px;
+  top: 1px;
+}
+.checkbox-label::before,
+.radio-label::before {
+  border: 2px solid #C29974;
+  z-index: 1;
+}
+.checkbox-label::after {
+  content: url(../static/images/check-mark.svg);
+  padding-left: 3px; 
+  opacity: 0;
+  z-index: 2;
+}
+.radio-label::after {
+  width: 12px;
+  height: 12px;
+  background: #C29974;
+  left: 4px;
+  top: 4px;
+  opacity: 0;
+  border-radius: 50%;
+  z-index: 2;
+}
+.custom-checkbox:checked + .checkbox-label::after,
+.custom-radio:checked + .radio-label::after {
+  opacity: 1;
+}
+
+.custom-radio:disabled + .radio-label::after {
+  background: #E1CDBA;
+}
+.custom-radio:disabled + .radio-label::before {
+  border-color: #E1CDBA;
+}
+.custom-radio:disabled + .radio-label {
+  color: #908484;
+}
+
+.custom-checkbox:checked + .checkbox-label::before {
+  background: #FFFFFF;
+}
+.custom-checkbox:disabled + .checkbox-label {
+  color: #908484;
+}
+.custom-checkbox:disabled + .checkbox-label::before {
+  border-color: #E1CDBA;
+}
+.custom-checkbox:disabled + .checkbox-label::after {
+  fill: #E1CDBA;
+}
+/* CUSTOM-RADIO-BUTTON */
+
+.custom-radio-button {
+  display: inline-flex;
+}
+.radio-button-list {
+  display: flex;
+}
+.amount li:not(:first-child) {
+  flex-direction: row;
+}
+.custom-radio-button input[type=radio] {
+  display: none;
+}
+.custom-radio-button label {
+  display: inline-flex;
+  background: #FFFFFF;
+  padding: 7px 19px 7px;
+}
+.radio-button-list li:first-child label {
+  padding: 7px 28px 6px 28px;
+}
+.custom-radio-button input:checked + label{
+  background: #F3D0DB;
+}
+.custom-radio-button label:hover {
+  background: #EDDEEB;
+  cursor: pointer;
+}
+/* PRODUCTS */
+
+
+.category a {
+  font-family: Montserrat;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 26px;
+  line-height: 32px;
+  width: 70%;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+/* CONTACT-FORM*/
+
+
+.form-container {
+  width: 680px;
+  background: #E5EAF8;
+  padding: 42px 40px;
+}
+
+.form-container input,
+.label-wrapper textarea {
+  background: #FFFFFF;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  padding: 14px 0 11px 20px;
+  font-size: 18px;
+  line-height: 25px;
+  color: #1E0606;
+  outline: none;
+}
+
+.form-container input:focus,
+.label-wrapper textarea:focus {
+  border: 2px solid rgba(0, 0, 0, 0.3);
+}
+
+.form-2-column {
+  display: flex;
+  margin: 20px 0;
+}
+
+.form-2-column div:first-child {
+  margin-right: 20px;
+}
+
+.label-wrapper,
+.form-2-column div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.label-wrapper label,
+.form-2-column label{
+  padding-bottom: 3px;
+}
+
+.form-container .custom-checkbox + label {
+  font-size: 14px;
+  line-height: 19px;
+  padding-left: 34px;
+}
+
+.form-container .checkbox-list label{
+  margin: 22px 0 17px;
+}
+
+.form-container .checkbox-label::before,
+.form-container .checkbox-label::after {
+  top: -3px;
+}
+
+.form-container .custom-checkbox:checked + .checkbox-label::before {
+  background: transparent;
+}
+
+
+
 // Подключение компонентов
 @import "./header/header";
 @import "./footer/footer";
+@import "./button/button";
+@import "./buttonA/buttonA";
+@import "./banner/banner";
+@import "./categoriesCatalog/categoriesCatalog";
+@import "./categoriesMain/categoriesMain";
+@import "./catalogDescription/catalogDescription";
+@import "./mainText/mainText";
+@import "./partners/partners";
+@import "./aboutContacts/aboutContacts";
+@import "./contacts/contacts";
+@import "./inputSection/inputSection";
+@import "./modalPopup/modalPopup";
+@import "./toyCard/toyCard";
+@import "./blogCard/blogCard";
+@import "./paginationBar/paginationBar";
+@import "./contactForm/contactForm";
+@import "./contactText/contactText";
 
-body {
-  font-family: Oswald, sans-serif;
-}
-
-.container {
-  width: 100%;
-  max-width: 1180px;
-  margin: 0 auto;
-  padding-right: 20px;
-  padding-left: 20px;
-}
-
-.title-block {
-  margin: 0 0 20px 0;
-
-  &_one {
-    font-size: 30px;
-    text-transform: uppercase;
-  }
-  &_two {
-    font-size: 25px;
-    max-width: 500px;
-  }
-}
