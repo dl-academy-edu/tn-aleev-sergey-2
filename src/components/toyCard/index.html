@@ -1,4 +1,10 @@
-<li class="toy-card"><img src="@@img" alt="/" width="380" height="385">
+<li class="toy-card">
+    <picture class="toy-card__img">
+        <source srcset="@@img-mobile" media="(max-width:700px)">
+        <source srcset="@@img-tablet" media="(max-width:1200px)">
+        <source srcset="@@img">
+        <img src="@@img" alt="/" width="380" height="385">
+    </picture>
     <h2 class="product-name">@@name</h2>
     <p class="price">@@price</p>
     <div class="hover-text"><a href="#">Learn more</a> </div>

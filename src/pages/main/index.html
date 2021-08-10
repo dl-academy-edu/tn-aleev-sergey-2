@@ -7,10 +7,12 @@
     <link rel="stylesheet" href="/static/fonts/montserrat.css" />
     <link rel="stylesheet" href="/static/fonts/openSans.css" />
     <link rel="stylesheet" href="/static/fonts/crimsonText.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Главная</title>
   </head>
   <body>
     @@include('header/index.html')
+
     <main class="grid">
       
     @@include('banner/index.html')
@@ -32,7 +34,12 @@
   </main>
     @@include('footer/index.html')
     
-    @@include('modalPopup/index.html')
+  <div class="modal-popup">
+    <div class="popup-container">
+      @@include('modalPopup/index.html')
+    </div>
+  </div>
+
     <script src="scripts.js"></script>
   </body>
 </html>

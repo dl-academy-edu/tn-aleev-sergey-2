@@ -12,6 +12,7 @@
   & li {
     font-family: Montserrat;
     line-height: 20px;
+    transition: $time;
   }
   & li:not(:last-child) {
     margin-right: 64px;
@@ -39,5 +40,20 @@
   &:active path {
     stroke: #C29974;
     opacity: 0.5;
+  }
+}
+.pagination__button path {
+  transition: $time;
+}
+
+@media (max-width:1000px) {
+  .pagination {
+    margin-bottom: 50px;
+  }
+}
+@media (max-width:767px) {
+  .pagination__numbers {
+      font-size: 14px;
+      line-height: 17px;
   }
 }

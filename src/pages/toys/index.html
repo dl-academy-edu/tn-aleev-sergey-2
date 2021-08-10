@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="/static/fonts/montserrat.css" />
     <link rel="stylesheet" href="/static/fonts/openSans.css" />
     <link rel="stylesheet" href="/static/fonts/crimsonText.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Toys</title>
   </head>
   <body>
@@ -15,7 +16,17 @@
       <h1 class="page-title">Toy for kids</h1>
       <ul class="bread-crumbs no-dots">
           <li><a href="index.html">Home</a></li>
+          <li class="bread-crumbs__arrow">
+            <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M1.31229 0L0 1.17735L5.37541 6L0 10.8227L1.31229 12L8 6L1.31229 0Z" fill="#1E0606"/>
+            </svg>
+          </li>
           <li><a href="catalog.html">Catalog</a></li>
+          <li class="bread-crumbs__arrow">
+            <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M1.31229 0L0 1.17735L5.37541 6L0 10.8227L1.31229 12L8 6L1.31229 0Z" fill="#1E0606"/>
+            </svg>
+          </li>
           <li>Toys</li>
       </ul>
     </section>
@@ -26,32 +37,50 @@
       <section class="products">
           <ul class="no-dots container">
             @@include('toyCard/index.html', {
-                "img":"../../static/images/toys/shark.png",
+                "img":"../../static/images/toys/shark-desktop.png",
+                "img-mobile":"../../static/images/toys/shark-mobile.png, ../../static/images/toys/shark-mobile-2x.png 2x",
+                "img-tablet":"../../static/images/toys/shark-tablet.png, ../../static/images/toys/shark-tablet-2x.png 2x",
+                "img-desktop":"../../static/images/toys/shark-desktop.png, ../../static/images/toys/shark-desktop-2x.png 2x",
                 "price":"$60.00 USD",
                 "name":"sharky bean bag chair cover"
             })
             @@include('toyCard/index.html', {
-                "img":"../../static/images/toys/lamp.png",
+                "img":"../../static/images/toys/lamp-desktop.png",
+                "img-mobile":"../../static/images/toys/lamp-mobile.png, ../../static/images/toys/lamp-mobile-2x.png 2x",
+                "img-tablet":"../../static/images/toys/lamp-tablet.png, ../../static/images/toys/lamp-tablet-2x.png 2x",
+                "img-desktop":"../../static/images/toys/lamp-desktop.png, ../../static/images/toys/lamp-desktop-2x.png 2x",
                 "price":"$66.00 USD",
                 "name":"brass deco frames"
             })
             @@include('toyCard/index.html', {
-                "img":"../../static/images/toys/apron.png",
+                "img":"../../static/images/toys/apron-desktop.png",
+                "img-mobile":"../../static/images/toys/apron-mobile.png, ../../static/images/toys/apron-mobile-2x.png 2x",
+                "img-tablet":"../../static/images/toys/apron-tablet.png, ../../static/images/toys/apron-tablet-2x.png 2x",
+                "img-desktop":"../../static/images/toys/apron-desktop.png, ../../static/images/toys/apron-desktop-2x.png 2x",
                 "price":"$60.00 USD",
                 "name":"cibo full apron"
             })
             @@include('toyCard/index.html', {
-                "img":"../../static/images/toys/gatcha machine.png",
+                "img":"../../static/images/toys/gatcha-machine-desktop.png",
+                "img-mobile":"../../static/images/toys/gatcha-machine-mobile.png, ../../static/images/toys/gatcha-machine-mobile-2x.png 2x",
+                "img-tablet":"../../static/images/toys/gatcha-machine-tablet.png, ../../static/images/toys/gatcha-machine-tablet-2x.png 2x",
+                "img-desktop":"../../static/images/toys/gatcha-machine-desktop.png, ../../static/images/toys/gatcha-machine-desktop-2x.png 2x",
                 "price":"$56.00 USD",
                 "name":"gatcha gatcha gumball machine"
             })
             @@include('toyCard/index.html', {
-                "img":"../../static/images/toys/candle.png",
+                "img":"../../static/images/toys/candle-desktop.png",
+                "img-mobile":"../../static/images/toys/candle-mobile.png, ../../static/images/toys/candle-mobile-2x.png 2x",
+                "img-tablet":"../../static/images/toys/candle-tablet.png, ../../static/images/toys/candle-tablet-2x.png 2x",
+                "img-desktop":"../../static/images/toys/candle-desktop.png, ../../static/images/toys/candle-desktop-2x.png 2x",
                 "price":"$29.00 USD",
                 "name":"christmas advent scented candle"
             })
             @@include('toyCard/index.html', {
-                "img":"../../static/images/toys/light.png",
+                "img":"../../static/images/toys/light-desktop.png",
+                "img-mobile":"../../static/images/toys/light-mobile.png, ../../static/images/toys/light-mobile-2x.png 2x",
+                "img-tablet":"../../static/images/toys/light-tablet.png, ../../static/images/toys/light-tablet-2x.png 2x",
+                "img-desktop":"../../static/images/toys/light-desktop.png, ../../static/images/toys/light-desktop-2x.png 2x",
                 "price":"$56.00 USD",
                 "name":"tangle spinning tea light"
             })

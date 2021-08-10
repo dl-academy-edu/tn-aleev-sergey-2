@@ -1,6 +1,11 @@
 <li class="blog-cards__item">
     <a href="#">
-        <img src="@@src" alt="@@alt" width="380" height="220">
+        <picture>
+            <source srcset="@@src-mobile" media="(max-width:767px)">
+            <source srcset="@@src-tablet" media="(max-width:1200px)">
+            <source srcset="@@src-desktop">
+            <img src="@@src" alt="@@alt">
+        </picture>
         <div class="blog-cards__date">@@date</div>
         <h2>@@heading</h2>
         <p>@@text</p>

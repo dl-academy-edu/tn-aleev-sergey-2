@@ -23,18 +23,38 @@
     margin-bottom: 23px;
     background-repeat: no-repeat;
     background-position: center;
+    @media (max-width:1200px) {
+        margin-bottom: 20px;
+        background-image: url(../../static/images/categories/catalog/category1-tablet.png);
+    }
+    @media (max-width:767px) {
+        margin-bottom: 20px;
+        background-image: url(../../static/images/categories/catalog/category1-mobile.png);
+    }
 }
 .categories-catalog li:nth-child(2) {
     background: #EADDD3;
     background-image: url(../../static/images/categories/category2.png);
     background-repeat: no-repeat;
     background-position: center;
+    @media (max-width:1200px) {
+        background-image: url(../../static/images/categories/catalog/category2-tablet.png);
+    }
+    @media (max-width:767px) {
+        background-image: url(../../static/images/categories/catalog/category2-mobile.png);
+    }
 }
 .categories-catalog li:nth-child(3) {
     background: #F8F2DA;
     background-image: url(../../static/images/categories/category3.png);
     background-repeat: no-repeat;
     background-position: center;
+    @media (max-width:1200px) {
+        background-image: url(../../static/images/categories/catalog/category3-tablet.png);
+    }
+    @media (max-width:767px) {
+        background-image: url(../../static/images/categories/catalog/category3-mobile.png);
+    }
 }
 .categories-catalog li:nth-child(4) {
     background: #D5D4E1;
@@ -42,16 +62,61 @@
     background-repeat: no-repeat;
     background-position: center;
     margin-left: 200px;
+    @media (max-width:1200px) {
+        margin-left: 0;
+        background-image: url(../../static/images/categories/catalog/category4-tablet.png);
+    }
+    @media (max-width:767px) {
+        background-image: url(../../static/images/categories/catalog/category4-mobile.png);
+    }
 }
 .categories-catalog li:nth-child(5) {
     background: #F3D0DB;
     background-image: url(../../static/images/categories/category5.png);
     background-repeat: no-repeat;
     background-position: center;
+    @media (max-width:1200px) {
+        background-image: url(../../static/images/categories/catalog/category5-tablet.png);
+    }
+    @media (max-width:767px) {
+        background-image: url(../../static/images/categories/catalog/category5-mobile.png);
+    }
 }
 .categories-catalog li:nth-child(6) {
     background: #E5EAF8;
     background-image: url(../../static/images/categories/category6.png);
     background-repeat: no-repeat;
     background-position: center;
+    
+    @media (max-width:1200px) {
+        margin-right: 0;
+        background-image: url(../../static/images/categories/catalog/category6-tablet.png);
+    }
+    @media (max-width:767px) {
+        background-image: url(../../static/images/categories/catalog/category6-mobile.png);
+    }
 }
+
+@media (min-width:731px) and (max-width:1200px) {
+    .category {
+        width: 203px;
+        height: 196px;
+    }
+    .categories-catalog li:nth-child(3) {
+        margin-right: 0;
+    }
+
+}
+@media (min-width:350px) and (max-width:767px) {
+    .category {
+        width: 150px;
+        height: 155px;
+    }
+    .categories-catalog li {
+        margin-right: 16px;
+    }
+    section .categories-catalog li:nth-child(2n+2) {
+        margin-right: 0;
+    }
+}
+

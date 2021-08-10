@@ -1,28 +1,35 @@
-body {
+
+.animation__container {
+    position: relative;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
     overflow-x: hidden;
+    max-width: 1400px;
+    width: 100%;
+    height: 100%;
 }
 .animation {
-    width: 1585px;
-
+    display: flex;
+    left: -8%;
+    max-width: 1400px;
     margin-bottom: 70px;
     position: relative;
-    left: 50%;
-    overflow: hidden;
-    transform: translateX(-50%);
 }
 
-@keyframes animation-car1 { from {left:45%;} 45.83% {left:100%;} 45.84% {left:-20%;} 100% {left:45%;}}
+@keyframes animation-car1 { from {left:50%;} 45.83% {left:110%;} 45.84% {left:-20%;} 100% {left:50%;}}
 .car1 {
+    left: 50%;
     bottom: 33%;
     animation: 5s 1s linear animation-car1 infinite both;
 }
-@keyframes animation-car2 { from {left:27%;} 60.83% {left:100%;} 60.84% {left:-20%;} 100% {left:27%;}}
+@keyframes animation-car2 { from {left:31%;} 60.83% {left:110%;} 60.84% {left:-20%;} 100% {left:31%;}}
 
-@keyframes animation-car3 { from {left:4%;} 80% {left:100%;} 80.01% {left:-20%;} 100%{left:4%}}
+@keyframes animation-car3 { from {left:5%;} 80% {left:110%;} 80.01% {left:-20%;} 100%{left:5%}}
 
-@keyframes animation-car4 { from {left:82%;} 15% {left:100%;} 15.01% {left:-20%;} 100%{left:82%}}
+@keyframes animation-car4 { from {left:93%;} 15% {left:110%;} 15.01% {left:-20%;} 100%{left:93%}}
 
-@keyframes taxi { from {left:100%;} 35% {left:42%;} 65% {left:42%; animation-timing-function:ease-in;} to {left:-56%;}}
+@keyframes taxi { from {left:120%;} 35% {left:48%;} 65% {left:48%; animation-timing-function:ease-in;} to {left:-100%;}}
 .town {
     position: relative;
 }
@@ -46,7 +53,7 @@ margin-top: 3%;
     position: absolute;
 }
 .man {
-    left: 25%;
+    left: 26%;
     bottom: 4%;
     &_body {
         z-index: 2;
@@ -61,49 +68,148 @@ margin-top: 3%;
     top: 65%;
 }
 .lantern_back {
-    left: 34%;
+    left: 39%;
     bottom: 24%;
 }
 .car2 {
+    left:31%;
     bottom: 32%;
     animation: 5s 1s linear animation-car2 infinite both;
 }
 .car3 {
+    left:5%;
     bottom: 31%;
     animation: 5s 1s linear animation-car3 infinite both;
 }
 .car4 {
-    bottom: 32%;
+    left:93%;
+    bottom: 30%;
     animation: 5s 1s linear animation-car4 infinite both;
 }
 .taxi {
+    left: 48%;
     position: absolute;
     bottom: 11%;
     animation: 10s 6.5s taxi both;
 }
 .lantern_front {
-    left: 71%;
+    left: 81%;
     bottom: 5%;
 }
+@keyframes man-hand {
+    from {transform: rotate(148deg);} 30% {transform: rotate(0deg);} 70% {transform: rotate(0deg);} to {transform: rotate(148deg);}}
 .hand {
-position: absolute;
-bottom: 34%;
-left: 25%;
-transform: rotate(0deg);
-transform-origin: 0 0;
+    position: absolute;
+    bottom: 36%;
+    left: 26.5%;
+    transform: rotate(148deg);
+    transform-origin: 10% 89%;
+    animation:3.5s 7.2s man-hand;
+
 }
-@keyframes dialog1 { from {opacity:0;} 20% {opacity:1;} 80% {opacity:1;} to {opacity:0}}
-@keyframes dialog2 { from {opacity:0;} 20% {opacity:1;} 80% {opacity:1;} to {opacity:0}}
+@keyframes woman-hand {from {transform: rotate(3deg);} 30% {transform: rotate(-40deg);} 70% {transform: rotate(-40deg);} to {transform: rotate(3deg);}}
+.woman-hand {
+    position: absolute;
+    left: 20%;
+    bottom: 17.8%;
+    transform: rotate(3deg);
+    transform-origin: left center;
+    animation: 4s 3.2s woman-hand;
+}
+
+@keyframes dialog { from {opacity:0;} 20% {opacity:1;} 80% {opacity:1;} to {opacity:0}}
 
 .dialog1 {
     position: absolute;
-    left: 12%;
+    left: 11%;
     bottom: 37%;
-    animation: 4s 3s dialog1 both;
+    animation: 4.2s 3s dialog both;
 }
 .dialog2 {
     position: absolute;
-    left: 24%;
+    left: 25%;
     bottom: 46%;
-    animation: 3.5s 7s dialog2 both;
+    animation: 3s 7s dialog both;
 }
+.dialog3 {
+    position: absolute;
+    right: 18%;
+    bottom: 37%;
+    animation: 3s 10s dialog both;
+}
+
+@media (max-width:1350px) {
+.animation {
+    transform:scale(0.9);
+    transform-origin: left top;
+}
+.animation__container {
+    margin-bottom: -84px;
+}
+}
+@media (max-width:1200px) {
+    .animation {
+        transform:scale(0.8);
+        
+    }
+    .animation__container {
+        margin-bottom: -168px;
+    }
+}
+@media (max-width:1000px) {
+    .animation {
+        transform:scale(0.7);
+    }
+    .animation__container {
+        margin-bottom: -252px;
+    }
+}
+@media (max-width:900px) {
+    .animation {
+        transform:scale(0.61);
+    }
+    .animation__container {
+        margin-bottom: -328px;
+    }
+}
+@media (max-width:800px) {
+    .animation {
+        transform:scale(0.55);
+    }
+    .animation__container {
+        margin-bottom: -400px;
+    }
+}
+@media (max-width:700px) {
+    .animation {
+        transform:scale(0.48);
+    }
+    .animation__container {
+        margin-bottom: -466px;
+    }
+}
+@media (max-width:600px) {
+    .animation {
+        transform:scale(0.41);
+    }
+    .animation__container {
+        margin-bottom: -525px;
+    }
+}
+@media (max-width:500px) {
+    .animation {
+        transform:scale(0.33);
+    }
+    .animation__container {
+        margin-bottom: -593px;
+    }
+}
+@media (max-width:400px) {
+    .animation {
+        transform:scale(0.27);
+    }
+    .animation__container {
+        margin-bottom: -643px;
+    }
+}
+
