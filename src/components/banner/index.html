@@ -1,11 +1,11 @@
-<section class="banner grid">
+<section class="banner">
     <div class="container">
         <ul class="lines no-dots">
             <li class="lines__number">01</li>
-            <li class="lines__active"></li>
-            <li class="lines__other"></li>
-            <li class="lines__other"></li>
-            <li class="lines__other"></li>
+            <li class="lines__item lines__item_active"></li>
+            <li class="lines__item"></li>
+            <li class="lines__item"></li>
+            <li class="lines__item"></li>
         </ul>
         <div class="heading">
             <h1 class="heading__main">THE OOH NOO COLLECTION</h1>
@@ -15,7 +15,12 @@
                 "class":"banner-btn-js banner__button"
             })
         </div>
-        <img class="banner__monster" src="../../static/images/monster.png" alt="" width="635" height="461">
+        <picture class="banner__monster">
+            <source srcset="../../static/images/monster-mobile.png, ../../static/images/monster-mobile-2x.png 2x" media="(max-width:768px)">
+            <source srcset="../../static/images/monster-tablet.png, ../../static/images/monster-tablet-2x.png 2x" media="(max-width:1200px)">
+            <source srcset="../../static/images/monster.png, ../../static/images/monster-2x.png 2x">
+            <img src="../../static/images/monster.png" alt="">
+        </picture>
     </div>
     <p class="banner__caption">Free (continental) USA shipping on all orders of $100 USD or more!</p>
 </section>

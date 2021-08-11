@@ -1,5 +1,8 @@
 .toy-card {
     position: relative;
+    &:nth-child(3n+2) {
+        margin: 0 20px;
+    }
 }
 .hover-text {
     font-family: Montserrat;
@@ -16,7 +19,10 @@
     z-index: 2;
     text-shadow: 0px 0px 40px rgba(147, 3, 3, 0.25);
     text-transform: uppercase;
-    padding: 82px 12px 0 11px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: $time;
 }
 
 .hover-text:hover{
@@ -28,24 +34,59 @@
     background:rgba(229, 234, 248, 0.67);
     opacity: 1;
 }
-.products .container {
-    flex-wrap: wrap;
-    margin: 0px 20px;
-}
 
 .product-name {
     font-family: Open-Sans;
+    font-weight: normal;
     text-transform: uppercase;
     font-size: 14px;
     line-height: 19px;
     text-align: center;
-    padding-top: 30px;
-    padding-bottom: 15px;
+    margin-top: 30px;
+    margin-bottom: 15px;
 }
 .price {
     font-family: OpenSans-bold;
     font-size: 16px;
     line-height: 22px;
     text-align: center;
-    padding-bottom: 25px;
+    margin-bottom: 25px;
+}
+@media (max-width:1200px) {
+    .toy-card {
+        width: 203px;
+    }
+    .hover-text {
+        display: none;
+    }
+    .product-name {
+        margin-bottom: 5px;
+        font-size: 12px;
+        line-height: 16px;
+    }
+    .price {
+        font-size: 14px;
+        line-height: 19px;
+        margin-bottom: 20px;
+    }
+}
+@media (max-width:700px) {
+    .toy-card {
+        width: 160px;
+    }
+    .price {
+        margin-bottom: 15px;
+        font-size: 12px;
+        line-height: 16px;
+}
+}
+@media (max-width:570px) {
+    .toy-card {
+        &:nth-child(3n+2) {
+            margin: 0px;
+        }
+        &:nth-child(odd) {
+            margin-right: 16px;
+        }
+    }
 }

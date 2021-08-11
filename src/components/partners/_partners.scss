@@ -2,8 +2,24 @@
 
 .partners {
     width: 100%;
-    margin: 90px 0 116px 0;
-    & ul {
-        justify-content: space-between;
+    margin: 90px auto 116px auto;
+    justify-content: space-between;
+    flex-direction: row;
+    display: flex;
+    align-content: space-between;
+}
+@media (max-width:1200px) {
+    .partners {
+        margin-top: 60px;
+        margin-bottom: 104px;
+    }
+}
+@media (max-width:720px) {
+    .partners {
+        width: 322px;
+        height: 108px;
+        flex-wrap: wrap;
+        margin-top: 83px;
+        margin-bottom: 95px;
     }
 }

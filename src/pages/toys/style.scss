@@ -1,6 +1,8 @@
 
 .toys-grid {
     background: #E5EAF8;
+    display: flex;
+    justify-content: center;
 }
 
 /* PRODUCTS */
@@ -8,4 +10,17 @@
 .products {
     margin: 60px 0;
 }
+.products .container {
+    justify-content: center;
+}
 
+@media (max-width:1200px) {
+    .products {
+        margin: 50px 0 30px 0;
+    }
+}
+@media (max-width:700px) {
+    .products {
+        margin: 40px 0 20px 0;
+    }
+}

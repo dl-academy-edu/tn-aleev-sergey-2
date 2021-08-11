@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <link href="/common.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/static/fonts/montserrat.css" />
+    <link rel="stylesheet" href="/static/fonts/openSans.css" />
+    <link rel="stylesheet" href="/static/fonts/crimsonText.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная</title>
+  </head>
+  <body>
+    @@include('header/index.html')
+    
+    <section class="grid">
+      <div class="page-title">
+          <h1>grid</h1>
+              <ul class="bread-crumbs no-dots">
+                  <li><a href="index.html">Home</a></li>
+                  <li class="bread-crumbs__arrow">
+                    <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M1.31229 0L0 1.17735L5.37541 6L0 10.8227L1.31229 12L8 6L1.31229 0Z" fill="#1E0606"/>
+                    </svg>
+                  </li>
+                  <li>Grid</li>
+              </ul>
+      </div>
+  </section>
+
+    <div class="grid-container">
+
+        <div class="grid-container__box grid-container__box_1">
+          <div class="box1">
+            <div>IPHONE 6S</div>
+            <div><p>3D Touch. 12MP photos. 4K video. One powerful phone</p></div>
+            <div>Learn more or visit an Apple Store today</div>
+          </div>
+          
+            <picture>
+              <source srcset="../../static/images/grid/iphone-mobile.png, ../../static/images/grid/iphone-mobile-2x.png 2x" media="(max-width:767px)">
+              <source srcset="../../static/images/grid/iphone.png, ../../static/images/grid/iphone-2x.png 2x">
+              <img src="../../static/images/grid/iphone.png" alt="iphone">
+            </picture>
+        </div>
+        <div class="grid-container__box grid-container__box_2">
+            <div>learn more</div>
+            <div>How to Use Rotary Evaporator in Chemical Labs</div>
+            <div>Download now</div>
+        </div>
+        <div class="grid-container__box grid-container__box_3">
+            <div>
+              <picture>
+                <source srcset="../../static/images/grid/keypad.png, ../../static/images/grid/keypad-2x.png 2x">
+                <img src="../../static/images/grid/keypad.png" alt="keypad">
+              </picture>
+            </div>
+            <div>Our Brand New Keyboard</div>
+            <div>learn</div>
+        </div>
+        <div class="grid-container__box grid-container__box_4">
+            <div class="box4-left">
+                <div>IMAC.RETINA</div>
+                <div>Hardly a month passes these days where</div>
+                <div><img src="../../static/images/grid/imac.png" alt="imac"></div>
+            </div>
+            <div class="box4-right">
+                <p>Apple may be experimenting in the virtual reality space. The company has been granted a patent for a head-mounted virtual reality device that would use the iPhone screen as the display.</p>
+                <a href="">DOWNLOAD NOW ›</a>
+            </div>
+        </div>
+        <div class="grid-container__box grid-container__box_5">
+          <div class="floppy-container">
+            <img src="../../static/images/grid/floppy.svg" alt="" />
+            <img class="floppy-disc" src="../../static/images/grid/floppy-disc.png" alt="floppy-disc">
+          </div>
+          <div>iCloud</div>
+          <p>With iCloud, you always have the latest versions of your most important things — like documents, apps, notes, and contacts — on whatever device you’re using.</p>
+          <div><a href="">LEARN MORE</a></div>
+        </div>
+        <div class="grid-container__box grid-container__box_6">
+          <div>BEST CHOICE</div>
+          <div><p>Much MuchBetter Experience</p></div>
+          <div>
+            <picture>
+              <source srcset="../../static/images/grid/laptop-mobile.png, ../../static/images/grid/laptop-mobile-2x.png" media="(max-width:767px)">
+              <source srcset="../../static/images/grid/laptop.png, ../../static/images/grid/laptop-2x.png 2x">
+              <img src="../../static/images/grid/laptop.png" alt="laptop"/>
+            </picture>
+          </div>
+        </div>
+        <div class="grid-container__box grid-container__box_7">
+          <div><img src="../../static/images/grid/gamepad.png" alt="gamepad" /></div>
+          <div>Games ourpassion</div>
+          <div><a href="#">LEARN ›</a></div>
+        </div>
+        <div class="grid-container__box grid-container__box_8">
+          <div><img src="../../static/images/grid/instagram.svg" alt="instagram-icon" /></div>
+          <div>Follow me ›</div>
+        </div>
+        <div class="grid-container__box grid-container__box_9">
+          <div>
+            <picture>
+              <source srcset="../../static/images/grid/tv-mobile.png, ../../static/images/grid/tv-mobile-2x.png 2x" media="(max-width:767px)">
+              <source srcset="../../static/images/grid/tv.png, ../../static/images/grid/tv-2x.png 2x">
+              <img src="../../static/images/grid/tv.png" alt="tv" />
+            </picture>
+
+          </div>
+          <div><p>More than just a display. It's a vision</p></div>
+        </div>
+    </div>
+    @@include('footer/index.html')
+    <script src="scripts.js"></script>
+  </body>
+</html>

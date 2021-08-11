@@ -8,26 +8,35 @@
     <link rel="stylesheet" href="/static/fonts/openSans.css" />
     <link rel="stylesheet" href="/static/fonts/crimsonText.css" />
     <link rel="shortcut icon" href="/static/images/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Catalog</title>
   </head>
   <body>
       @@include('header/index.html')
 <main class="grid">
 
-    <section class="blog-cards-container">
-        <div class="page-title">
-            <h1>Blog</h1>
-            <ul class="bread-crumbs no-dots">
-                <li><a href="index.html">Home</a></li>
-                <li>Blog</li>
-            </ul>
-        </div> 
     
-    <div class="blog-cards">
-        <ul class="container no-dots">
+    <div class="page-title">
+        <h1>Blog</h1>
+        <ul class="bread-crumbs no-dots">
+            <li><a href="index.html">Home</a></li>
+            <li class="bread-crumbs__arrow">
+                <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M1.31229 0L0 1.17735L5.37541 6L0 10.8227L1.31229 12L8 6L1.31229 0Z" fill="#1E0606"/>
+                </svg>
+              </li>
+            <li>Blog</li>
+        </ul>
+    </div> 
+
+    <section class="blog-cards-container">
+        <ul class="blog-cards no-dots">
 
             @@include('blogCard/index.html',{
                 "src":"../../static/images/blog/blog1.jpg",
+                "src-mobile":"../../static/images/blog/blog1-mobile.jpg, ../../static/images/blog/blog1-mobile-2x.jpg 2x",
+                "src-tablet":"../../static/images/blog/blog1-tablet.jpg, ../../static/images/blog/blog1-tablet-2x.jpg 2x",
+                "src-desktop":"../../static/images/blog/blog1.jpg, ../../static/images/blog/blog1-2x.jpg 2x",
                 "heading":"Top 5 fastest growing it service companies in philly",
                 "text":"Direct Line Development’s Team is excited to announce that we received UpCity’s 2019 Local Excellence Award! This prestigious award is annually presented to the Top 1% of service providers in the given marketplace.",
                 "date": "23rd August 2018",
@@ -36,6 +45,9 @@
             })
             @@include('blogCard/index.html',{
                 "src":"../../static/images/blog/blog2.jpg",
+                "src-mobile":"../../static/images/blog/blog2-mobile.jpg, ../../static/images/blog/blog2-mobile-2x.jpg 2x",
+                "src-tablet":"../../static/images/blog/blog2-tablet.jpg, ../../static/images/blog/blog2-tablet-2x.jpg 2x",
+                "src-desktop":"../../static/images/blog/blog2.jpg, ../../static/images/blog/blog2-2x.jpg 2x",
                 "heading":"Best financial",
                 "text":"Direct Line Development is honored to be recognized as one of the Top 100 Fastest Growing Companies 2019 in Philadelphia, according to Growjo’s ranking.",
                 "date": "23rd August 2018",
@@ -43,6 +55,9 @@
             })
             @@include('blogCard/index.html',{
                 "src":"../../static/images/blog/blog3.jpg",
+                "src-mobile":"../../static/images/blog/blog3-mobile.jpg, ../../static/images/blog/blog3-mobile-2x.jpg 2x",
+                "src-tablet":"../../static/images/blog/blog3-tablet.jpg, ../../static/images/blog/blog3-tablet-2x.jpg 2x",
+                "src-desktop":"../../static/images/blog/blog3.jpg, ../../static/images/blog/blog3-2x.jpg 2x",
                 "heading":"Company logo or brand identity: which one is more important? brand identity",
                 "text":"To survive in the world of digital marketing, you need to keep up with the latest SEO trends. Here are our simple, but effective, SEO tips for small business success.",
                 "date": "23rd August 2018",
@@ -50,6 +65,9 @@
             })
             @@include('blogCard/index.html',{
                 "src":"../../static/images/blog/blog4.jpg",
+                "src-mobile":"../../static/images/blog/blog4-mobile.jpg, ../../static/images/blog/blog4-mobile-2x.jpg 2x",
+                "src-tablet":"../../static/images/blog/blog4-tablet.jpg, ../../static/images/blog/blog4-tablet-2x.jpg 2x",
+                "src-desktop":"../../static/images/blog/blog4.jpg, ../../static/images/blog/blog4-2x.jpg 2x",
                 "heading":"Best financial",
                 "text":"Direct Line Development is honored to be recognized as one of the Top 100 Fastest Growing Companies 2019 in Philadelphia, according to Growjo’s ranking.",
                 "date": "23rd August 2018",
@@ -57,6 +75,9 @@
             })
             @@include('blogCard/index.html',{
                 "src":"../../static/images/blog/blog5.jpg",
+                "src-mobile":"../../static/images/blog/blog5-mobile.jpg, ../../static/images/blog/blog5-mobile-2x.jpg 2x",
+                "src-tablet":"../../static/images/blog/blog5-tablet.jpg, ../../static/images/blog/blog5-tablet-2x.jpg 2x",
+                "src-desktop":"../../static/images/blog/blog5.jpg, ../../static/images/blog/blog5-2x.jpg 2x",
                 "heading":"Company logo or brand identity: which one is more important? brand identity",
                 "text":"To survive in the world of digital marketing, you need to keep up with the latest SEO trends. Here are our simple, but effective, SEO tips for small business success.",
                 "date": "23rd August 2018",
@@ -64,13 +85,15 @@
             })
             @@include('blogCard/index.html',{
                 "src":"../../static/images/blog/blog6.jpg",
+                "src-mobile":"../../static/images/blog/blog6-mobile.jpg, ../../static/images/blog/blog6-mobile-2x.jpg 2x",
+                "src-tablet":"../../static/images/blog/blog6-tablet.jpg, ../../static/images/blog/blog6-tablet-2x.jpg 2x",
+                "src-desktop":"../../static/images/blog/blog6.jpg, ../../static/images/blog/blog6-2x.jpg 2x",
                 "heading":"Top 5 fastest growing it service companies in philly",
                 "text":"Direct Line Development’s Team is excited to announce that we received UpCity’s 2019 Local Excellence Award! This prestigious award is annually presented to the Top 1% of service providers in the given marketplace.",
                 "date": "23rd August 2018",
                 "alt":""
             })
         </ul>
-    </div>
     </section>
     
 @@include('paginationBar/index.html')

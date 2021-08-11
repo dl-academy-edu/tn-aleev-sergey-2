@@ -3,6 +3,9 @@
   display: block;
   position: absolute;
   }
+
+$time:.4s;
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -14,11 +17,11 @@
   margin-left: auto;
   margin-right: auto;
   max-width: 1180px;
-  width: 100%;
 }
 img {
   display: block;
   max-width: 100%;
+  height: auto;
 }
 body {
   font-family: Open-Sans;
@@ -66,7 +69,7 @@ h3 {
   line-height: 32px;
 }
 h1 {
-  line-height: 110%;
+  line-height: 100%;
 }
 .page-title {
   margin-top: 60px;
@@ -87,6 +90,7 @@ h1 {
   text-transform: uppercase;
   padding: 9px 22px;
   align-self: flex-start;
+  transition: $time;
   &:hover {
     background: #C29974;
   }
@@ -118,6 +122,12 @@ textarea {
   line-height: 25px;
   & li:last-child{
     opacity: 0.5;
+  }
+  &__arrow {
+    margin: 0 20px;
+    @media (max-width:767px) {
+      margin: 0 14px;
+    }
   }
 }
 
@@ -231,6 +241,7 @@ textarea {
   display: inline-flex;
   background: #FFFFFF;
   padding: 7px 19px 7px;
+  transition: $time;
 }
 .radio-button-list li:first-child label {
   padding: 7px 28px 6px 28px;
@@ -252,77 +263,11 @@ textarea {
   font-size: 26px;
   line-height: 32px;
   width: 70%;
+  transition: $time;
   &:hover {
     text-decoration: underline;
   }
 }
-
-/* CONTACT-FORM*/
-
-
-.form-container {
-  width: 680px;
-  background: #E5EAF8;
-  padding: 42px 40px;
-}
-
-.form-container input,
-.label-wrapper textarea {
-  background: #FFFFFF;
-  border: 2px solid rgba(0, 0, 0, 0.2);
-  padding: 14px 0 11px 20px;
-  font-size: 18px;
-  line-height: 25px;
-  color: #1E0606;
-  outline: none;
-}
-
-.form-container input:focus,
-.label-wrapper textarea:focus {
-  border: 2px solid rgba(0, 0, 0, 0.3);
-}
-
-.form-2-column {
-  display: flex;
-  margin: 20px 0;
-}
-
-.form-2-column div:first-child {
-  margin-right: 20px;
-}
-
-.label-wrapper,
-.form-2-column div {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
-
-.label-wrapper label,
-.form-2-column label{
-  padding-bottom: 3px;
-}
-
-.form-container .custom-checkbox + label {
-  font-size: 14px;
-  line-height: 19px;
-  padding-left: 34px;
-}
-
-.form-container .checkbox-list label{
-  margin: 22px 0 17px;
-}
-
-.form-container .checkbox-label::before,
-.form-container .checkbox-label::after {
-  top: -3px;
-}
-
-.form-container .custom-checkbox:checked + .checkbox-label::before {
-  background: transparent;
-}
-
-
 
 // Подключение компонентов
 @import "./header/header";
@@ -342,6 +287,44 @@ textarea {
 @import "./toyCard/toyCard";
 @import "./blogCard/blogCard";
 @import "./paginationBar/paginationBar";
-@import "./contactForm/contactForm";
 @import "./contactText/contactText";
+
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .bread-crumbs {
+    margin-bottom: 20px;
+  }
+  .grid {
+    max-width: 649px;
+  }
+  .page-title {
+    font-size: 36px;
+    line-height: 44px;
+    margin-top: 35px;
+  }
+}
+@media screen and (min-width:320px) and (max-width:767px) {
+  .bread-crumbs {
+    margin-bottom: 20px;
+  }
+  .grid {
+    max-width: 100%;
+    margin:0 20px;
+  }
+  .page-title {
+    font-size: 24px;
+    line-height: 29px;
+    margin-top: 20px;
+  }
+  .radio-label::before {
+    width: 16px;
+    height: 16px;
+  }
+  .radio-label::after {
+    top: 3px;
+    left: 3px;
+    width: 10px;
+    height: 10px;
+  }
+}
 

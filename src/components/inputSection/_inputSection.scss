@@ -1,11 +1,16 @@
 
-
-
-
-
+.about-toys {
+    max-width: 1180px;
+    width: 100%;
+  }
 .input-selector {
     display: flex;
+    flex-wrap: wrap;
     padding: 42px 0 44px;
+    &__button {
+        margin-top: 37px;
+        align-self: flex-start;
+    }
 }
 .input-selector h2 {
     font-family: OpenSans-bold;
@@ -14,16 +19,16 @@
     text-transform: none;
     margin-bottom: 15px;
 }
-.input-selector button {
-    align-self: flex-start;
-}
+
 .slider-container {
     margin-right: 94px;
     width: 207px;
     display: flex;
     flex-direction: column;
 }
-
+.slider-container h2 {
+    margin-bottom: 25px;
+}
 .custom-slider {
     margin-left: 5px;
     width: 46px;
@@ -37,7 +42,6 @@
     display: flex;
     justify-content: space-between;
 }
-
 .custom-slider::after,
 .custom-slider::before {
     content: '';
@@ -58,23 +62,91 @@
     background: #FFFFFF;
     z-index: 1;
 }
-
-.checkbox-list {
+.color-container {
     margin-right: 124px;
 }
-.radio-list {
-    margin-right: 69px;
-}
-.radio-button-list {
+.amount-container {
     margin-right: 60px;
+}
+.delivery-container {
+    margin-right: 69px;
 }
 .checkbox-list li:not(:last-child) {
     margin-bottom: 15px;
 }
-.input-selector button {
-    margin-top: 37px;
-}
-
 .radio-list li:first-child {
     margin-bottom: 10px;
+}
+
+@media (max-width:1200px) {
+    .input-selector {
+        padding: 30px 0 30px 60px;
+        &__button {
+            align-self: flex-end;
+        }
+    }
+    .about-toys {
+    max-width: 768px;
+}
+.slider-container {
+    margin-right: 75px;
+}
+.color-container {
+    margin-right: 92px;
+}
+.amount-container {
+    margin-top: 21px;
+    margin-right: 208px;
+}
+}
+@media (max-width:767px) {
+    .input-selector {
+        padding: 25px 0 25px 20px;
+    }
+    .delivery-container {
+        margin: 0;
+    }
+}
+@media (max-width:620px) {
+    .input-selector {
+        flex-direction: column;
+        &__button {
+            margin-top: 0;
+            align-self: center;
+        }
+    }
+    .checkbox-label::after {
+        top: 2px;
+    }
+    .input-selector h2,
+    .input-selector label,
+    .slider-numbers {
+        font-size: 14px;
+        line-height: 19px;
+    }
+    .slider-container h2 {
+        margin-bottom: 20px;
+    }
+    .checkbox-list li:not(:last-child) {
+        margin-bottom: 10px;
+    }
+    .radio-list li:first-child {
+        margin-bottom: 12px;
+    }
+    .input-selector> div {
+        margin: 0 0 25px 0;
+    }
+    .color-container h2,
+    .amount-container h2 {
+        margin-bottom: 10px;
+    }
+    .delivery-container h2{
+        margin-bottom: 12px;
+    }
+    .radio-button-list li:first-child label {
+        padding: 6px 28px;
+    }
+    .custom-radio-button label {
+        padding: 6px 19px;
+    }
 }

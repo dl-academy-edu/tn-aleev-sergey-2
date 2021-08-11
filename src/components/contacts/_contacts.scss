@@ -1,15 +1,72 @@
 /* CONTACTS */
 
 .contacts {
+    width: 543px;
     position: relative;
+    margin-bottom: 174px;
+    padding-left: 30px;
     & h2 {
+        margin-top: -26px;
         margin-bottom: 20px;
     }
     & p {
-        padding-bottom: 102px;
+        padding-bottom: 20px;
     }
     &__map {
-        position: absolute;
-        top: 127px ;
+        margin-bottom: -114px;
+        width: 483px;
+        height: 196px;
+    }
+}
+
+@media screen and (min-width:320px) and (max-width:767px) {
+    
+    .contacts {
+        margin: 0 auto;
+        width: 375px;
+        padding: 0 20px;
+        margin-bottom: 148px;
+    }
+    .contacts h2 {
+        margin-top: -15px;
+        font-size: 24px;
+        line-height: 29px;
+        margin-bottom: 10px;
+    }
+    .contacts p {
+        font-size: 14px;
+        line-height: 19px;
+    }
+    .contacts__map {
+        width: 335px;
+        height: 196px;
+    }
+    .about__button {
+        margin-top: 15px;
+        margin-bottom: 25px;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+    .contacts {
+        width: 314px;
+        padding: 0 15px;
+        margin-bottom: 155px;
+        &__map {
+            margin-bottom: -75px;
+            width: 284px;
+            height: 151px;
+        }
+    }
+    .contacts h2 {
+        margin-top: -19px;
+        margin-bottom: 24px;
+        font-size: 30px;
+        line-height: 37px;
+    }
+}
+@media (max-width:400px) {
+    .contacts {
+        margin-left: 0;
+        margin-right: 0;
     }
 }

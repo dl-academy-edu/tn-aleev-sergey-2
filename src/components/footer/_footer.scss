@@ -1,7 +1,6 @@
 /* FOOTER */
 
-.footer,
-.toys-grid {
+.footer {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -12,22 +11,30 @@
   &__block_first,
   &__block_second {
     display: flex;
+    flex-direction: row;
   }
   &__block_first {
-    margin: 0 auto;
-    border-bottom: 1px solid #666666;
+    flex-wrap: wrap;
     padding-bottom: 28px;
   }
   &__block_second {
+    border-top: 1px solid #666666;
     padding-top: 23px;
   }
+
   &__copyright{
     margin-right: 109px;
   }
 }
-
-.footer__container,
-.about-toys {
+.footer__block_first-line {
+  display: flex;
+  flex-direction: row;
+}
+.footer__block_second-line {
+  display: flex;
+  flex-direction: row;
+}
+.footer__container {
   max-width: 1180px;
   width: 100%;
 }
@@ -50,21 +57,23 @@
   }
   &__title {
     border-bottom: 1px solid #666666;
+    padding-bottom: 23px;
   }
 }
 .column__title, .design-studio {
   font-size: 16px;
   color: #AAAAAA;
-  padding-bottom: 23px;
-  font-weight: unset;
 }
 .design-studio:hover {
   color: #FFFFFF;
   text-decoration: underline;
 }
 
+.footer-links a {
+  transition: $time;
+}
 .footer-links {
-  padding-top: 28px;
+  margin-top: 28px;
   & li {
     margin-bottom: 15px;
       &:last-child {
@@ -79,7 +88,6 @@
   }
 }
 
-
 .email {
   background: #666666;
   border: 1px solid transparent;
@@ -88,6 +96,7 @@
   padding: 9px 0 9px 15px;
   font-size: 16px;
   color: #EBEBEB;
+  transition: $time;
   &:focus {
     border: 1px solid #FFFDFD;
     border-right: none;
@@ -97,6 +106,7 @@
   display: inline-flex;
   &__item {
     margin-right: 10px;
+    transition: $time;
     &:hover {
       opacity: 0.5;
     }
@@ -120,9 +130,6 @@
 .rating input {
   display: none;
 }
-
-
-
 .rating-star:checked + label path,
 .rating-star:checked ~ .rating-label path{
   fill: #C29974;
@@ -131,6 +138,7 @@
 .rating-label:hover path,
 .rating-label:hover ~ .rating-label path,
 .rating-star:checked + .rating-label:hover path {
+  transition: $time;
   fill:#836E5B;
   cursor: pointer;
 }
@@ -138,16 +146,106 @@
 .rating input:checked ~ .rating-caption {
   color: #C29974;
 }
+input::placeholder {
+  color:#EBEBEB;
+}
 
+@media screen and (min-width:320px) and (max-width:767px) {
+  .footer {
+    &__button {
+      width: 72px;
+    }
+    &__container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 70px 20px 70px;
+    }
+    &__copyright {
+      margin-right: 0;
+    }
+    &__block_first {
+      padding-bottom: 60px;
+    }
+  }
+  .column {
+    margin-left: auto;
+    margin-right: auto;
+    &:nth-child(2) {
+      margin: 40px auto 60px auto;
+    }
+    &__title {
+      max-width: 380px;
+      padding-bottom: 20px;
+    }
+  }
+  .footer-links {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    font-size: 14px;
+    line-height: 19px;
+    flex-wrap: wrap;
+    max-width: 380px;
+    height: 90px;
+  }
+  .footer-links li:nth-child(3) {
+    margin-bottom: 0;
+  }
+  .footer__block_second {
+    padding-top: 24px;
+    max-width: 380px;
+    width: 100%;
+    margin: 0 auto;
+    flex-direction: column;
+  }
+  .footer__block_first-line {
+    margin-bottom: 15px;
+  }
+  .footer__block_second-line {
+    flex-direction: column;
+  }
+  .footer__copyright {
+    margin-bottom: 15px;
+  }
+  .email {
+    width: 263px;
+  }
+  .rating {
+    margin-right: 0;
+  }
+}
 
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .footer {
+    &__container {
+      padding: 80px 60px;
+      max-width: 769px;
+      width: 100%;
+    }
+    &__copyright {
+      width: 291px;
+      margin-right: 43px;
+    }
+  }
+  .column {
+    max-width: 203px;
+  }
+  .email {
+    width: 121px;
+  }
+  .footer__block_second {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer__block_first-line {
+    margin-bottom: 15px;
 
-
-input::-webkit-input-placeholder {color:#EBEBEB;}
-input::-moz-placeholder          {color:#EBEBEB;}/* Firefox 19+ */
-input:-moz-placeholder           {color:#EBEBEB;}/* Firefox 18- */
-input:-ms-input-placeholder      {color:#EBEBEB;}
-
-
+  }
+  .rating-caption {
+    width: 123px;
+  }
+}
 
 
 
