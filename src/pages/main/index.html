@@ -9,30 +9,29 @@
     <link rel="stylesheet" href="/static/fonts/crimsonText.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Главная</title>
+    <meta name="description" content="Учебный сайт по фронтенду Алеева Сергея">
   </head>
   <body>
     @@include('header/index.html')
 
     <main class="grid">
-      
-    @@include('banner/index.html')
+     <audio autoplay src="../../static/images/background-music.mp3"></audio>
+      @@include('banner/index.html')
 
-    @@include('categoriesMain/index.html')
+      @@include('categoriesMain/index.html')
   
-    @@include('mainText/index.html')
+      @@include('mainText/index.html')
 
-    @@include('partners/index.html')
+      @@include('partners/index.html')
 
-  
-
-      
       <div class="about_contacts">
           @@include('aboutContacts/index.html')
   
           @@include('contacts/index.html')
       </div>
   </main>
-    @@include('footer/index.html')
+
+  @@include('footer/index.html')
     
   <div class="modal-popup">
     <div class="popup-container">
@@ -40,6 +39,6 @@
     </div>
   </div>
 
-    <script src="scripts.js"></script>
+  <script src="scripts.js"></script>
   </body>
 </html>
