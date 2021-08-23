@@ -1,6 +1,8 @@
 
 
 .grid-container {
+    font-family: Lato;
+    font-style: normal;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(7, 215px);
@@ -169,8 +171,7 @@
 .box1 div{
 &:first-child {
 margin-bottom:10px;
-font-family: Lato;
-font-style: normal;
+
 font-weight: bold;
 font-size: 12px;
 line-height: 14px;
@@ -179,8 +180,6 @@ color: #BCBCBE;
 &:nth-child(2) {
     margin-bottom:20px;
     width: 220px;
-    font-family: Lato;
-    font-style: normal;
     font-weight: 500;
     font-size: 22px;
     line-height: 26px;
@@ -191,8 +190,6 @@ color: #BCBCBE;
 }
 &:last-child {
     width: 220px;
-    font-family: Lato;
-    font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 17px;
@@ -205,8 +202,6 @@ color: #BCBCBE;
 }
 .grid-container__box_2 div{
     &:first-child {
-        font-family: Lato;
-        font-style: normal;
         font-weight: bold;
         font-size: 12px;
         line-height: 14px;
@@ -215,8 +210,6 @@ color: #BCBCBE;
     }
     &:nth-child(2) {
         width: 450px;
-        font-family: Lato;
-        font-style: normal;
         font-weight: bold;
         font-size: 48px;
         line-height: 58px;
@@ -235,8 +228,6 @@ color: #BCBCBE;
             }
     }
     &:nth-child(3) {
-        font-family: Lato;
-        font-style: normal;
         font-weight: 500;
         font-size: 14px;
         line-height: 17px;
@@ -255,8 +246,6 @@ color: #BCBCBE;
     }
     &:nth-child(2) {
         width: 170px;
-        font-family: Lato;
-        font-style: normal;
         font-weight: bold;
         font-size: 22px;
         line-height: 26px;
@@ -265,8 +254,6 @@ color: #BCBCBE;
         margin-bottom: 20px;
     }
     &:nth-child(3) {
-        font-family: Lato;
-        font-style: normal;
         font-weight: bold;
         font-size: 12px;
         line-height: 14px;
@@ -294,8 +281,6 @@ color: #BCBCBE;
 }
 .box4-left div{
         &:first-child {
-            font-family: Lato;
-            font-style: normal;
             font-weight: bold;
             font-size: 12px;
             line-height: 14px;
@@ -310,8 +295,6 @@ color: #BCBCBE;
             }
         }
         &:nth-child(2) {
-            font-family: Lato;
-            font-style: normal;
             font-weight: 500;
             font-size: 22px;
             line-height: 26px;
@@ -337,8 +320,6 @@ color: #BCBCBE;
     }
 }
 .box4-right p{
-    font-family: Lato;
-    font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 17px;
@@ -351,9 +332,7 @@ color: #BCBCBE;
     }
 }
 .box4-right a {
-    font-family: Lato;
     align-self: flex-start;
-    font-style: normal;
     font-weight: bold;
     font-size: 12px;
     line-height: 14px;
@@ -381,8 +360,6 @@ color: #BCBCBE;
 .grid-container__box_5 p {
     margin-bottom: 30px;
     width: 230px;
-    font-family: Lato;
-    font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 17px;
@@ -392,8 +369,6 @@ color: #BCBCBE;
 .grid-container__box_5 div {
     &:nth-child(2) {
     margin-bottom: 10px;
-    font-family: Lato;
-    font-style: normal;
     font-weight: bold;
     font-size: 32px;
     line-height: 38px;
@@ -418,8 +393,6 @@ color: #BCBCBE;
     .grid-container__box_6  div{
     &:first-child {
         padding: 3px 5px;
-        font-family: Lato;
-        font-style: normal;
         font-weight: bold;
         font-size: 8px;
         line-height: 10px;
@@ -434,8 +407,6 @@ color: #BCBCBE;
     &:nth-child(2) {
         width: 200px;
     margin: auto 0;
-    font-family: Lato;
-    font-style: normal;
     font-weight: bold;
     font-size: 22px;
     line-height: 26px;
@@ -459,8 +430,6 @@ color: #BCBCBE;
     }
     &:nth-child(2) {
     margin-bottom:20px;
-    font-family: Lato;
-    font-style: normal;
     font-weight: 500;
     font-size: 22px;
     line-height: 26px;
@@ -468,8 +437,6 @@ color: #BCBCBE;
     color: #2C3036;
     }
     &:nth-child(3) {
-    font-family: Lato;
-    font-style: normal;
     font-weight: bold;
     font-size: 12px;
     line-height: 14px;
@@ -485,8 +452,6 @@ color: #BCBCBE;
     .grid-container__box_8 div {
     &:nth-child(2) {
         margin-top: 15px;
-    font-family: Lato;
-    font-style: normal;
     font-weight: bold;
     font-size: 22px;
     line-height: 26px;
@@ -515,8 +480,6 @@ color: #BCBCBE;
             max-width: 189px;
             margin-right: auto;
             margin-left: 40px;
-            font-family: Lato;
-            font-style: normal;
             font-weight: 500;
             font-size: 22px;
             line-height: 26px;
