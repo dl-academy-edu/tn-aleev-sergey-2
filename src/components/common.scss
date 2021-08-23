@@ -34,6 +34,7 @@ body {
   width: 0;
   height: 0;
   margin: 0;
+  display: none;
 }
 a {
   text-decoration: none;
@@ -53,14 +54,22 @@ a {
   display: flex;
   flex-direction: column;
 }
+h2 {
+  font-size: 38px;
+  line-height: 46px;
+}
 h1,h2 {
   font-family: Montserrat;
   font-size: 40px;
   text-transform: uppercase;
-}
-h2 {
-  font-size: 38px;
-  line-height: 46px;
+  @media (max-width:1200px) {
+    font-size: 36px;
+    line-height: 44px;
+  }
+  @media (max-width:500px) {
+    font-size: 24px;
+    line-height: 29px;
+  }
 }
 h3 {
   font-family: Crimson-Text-Italic;
@@ -120,12 +129,18 @@ textarea {
   font-family: Crimson-Text-Italic;
   font-size: 20px;
   line-height: 25px;
+  @media (max-width:767px) {
+    font-size: 16px;
+    line-height: 20px;
+  }
   & li:last-child{
     opacity: 0.5;
   }
   &__arrow {
+    position: relative;
     margin: 0 20px;
     @media (max-width:767px) {
+      top: 3px;
       margin: 0 14px;
     }
   }
@@ -257,18 +272,6 @@ textarea {
 /* PRODUCTS */
 
 
-.category a {
-  font-family: Montserrat;
-  text-transform: uppercase;
-  text-align: center;
-  font-size: 26px;
-  line-height: 32px;
-  width: 70%;
-  transition: $time;
-  &:hover {
-    text-decoration: underline;
-  }
-}
 
 // Подключение компонентов
 @import "./header/header";
@@ -289,6 +292,8 @@ textarea {
 @import "./blogCard/blogCard";
 @import "./paginationBar/paginationBar";
 @import "./contactText/contactText";
+@import "./category/category";
+
 
 // Self-Made-Grid
 
@@ -351,9 +356,9 @@ $size-sm:576px;
 }
 
 .container-self {
-  padding-left: $gap;
-  padding-right: $gap;
-  margin-left: auto;
+  padding-left: $gap/2;
+  padding-right: $gap/2;
+  // margin-left: auto;
   margin-right: auto;
 }
 
@@ -381,6 +386,9 @@ $size-sm:576px;
 div[class*="col"] {
   box-sizing: border-box;
   padding: $gap $gap/2 0 $gap/2;
+    @media (max-width:576px) {
+      padding: $gap-mobile $gap-mobile/2 0 $gap-mobile/2;
+    }
 }
 
 

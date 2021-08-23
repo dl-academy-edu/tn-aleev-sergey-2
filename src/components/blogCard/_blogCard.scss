@@ -1,3 +1,9 @@
+
+.blog-cards {
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
 .blog-cards {
     &__item {
         width: 380px;
