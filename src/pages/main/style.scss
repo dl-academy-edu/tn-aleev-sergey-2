@@ -71,9 +71,14 @@
         top: -26px;
     }
 }
-@media (max-width:767px) {
+@media (max-width:700px) {
+    .popup-container {
+        width: 100%;
+        padding: 0 20px;
+    }
     .popup-close {
-        left: 630px;
+        left: auto;
+        right: 20px;
         top: -26px;
     }
 }

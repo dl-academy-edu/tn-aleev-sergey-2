@@ -62,9 +62,9 @@
     padding: 42px 56px;
   }
 }
-@media (max-width:767px) {
+@media (max-width:700px) {
   .form-container {
-    max-width: 335px;
+    width: 100%;
     padding: 25px;
   }
   .form-2-column {

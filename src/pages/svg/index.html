@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="/common.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/static/fonts/montserrat.css" />
+    <link rel="stylesheet" href="/static/fonts/openSans.css" />
+    <link rel="stylesheet" href="/static/fonts/crimsonText.css" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>svg</title>
+</head>
+<body>
+    @@include('header/index.html')
+
+    <main class="grid">
+        <section>
+            <div class="page-title">
+                <h1>svg animation</h1>
+                    <ul class="bread-crumbs no-dots">
+                        <li><a href="index.html">Home</a></li>
+                        <li class="bread-crumbs__arrow">
+                          <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M1.31229 0L0 1.17735L5.37541 6L0 10.8227L1.31229 12L8 6L1.31229 0Z" fill="#1E0606"/>
+                          </svg>
+                        </li>
+                        <li>SVG</li>
+                    </ul>
+            </div>
+        </section>
+
+        <svg width="420" height="400">
+            <rect x="5" y="5" width="395" height="250" rx="12" ry="12" fill="#CCD1D9"/>
+            <rect x="5" y="30" width="20" height="325" fill="#545C66"/>
+            <rect x="25" y="30" width="185" height="325" fill="#656D78"/>
+            <rect x="40" y="45" width="140" height="16" rx="8" ry="8" fill="#5D9CEC"/>
+            <rect x="50" y="70" width="145" height="16" rx="8" ry="8" fill="#A0D468"/>
+            <rect x="60" y="95" width="40" height="16" rx="8" ry="8" fill="#ED5565"/>
+            <rect x="110" y="95" width="110" height="16" rx="8" ry="8" fill="#ED5565"/>
+            <rect x="70" y="120" width="150" height="16" rx="8" ry="8" fill="#FFCE54"/>
+            <rect x="70" y="145" width="100" height="16" rx="8" ry="8" fill="#CCD1D9"/>
+            <rect x="70" y="170" width="35" height="16" rx="8" ry="8" fill="#CCD1D9"/>
+             <rect x="115" y="170" width="110" height="16" rx="8" ry="8" fill="#CCD1D9"/>
+              <rect x="70" y="195" width="150" height="16" rx="8" ry="8" fill="#CCD1D9"/>
+               <rect x="70" y="220" width="115" height="16" rx="8" ry="8" fill="#FFCE54"/>
+              <rect x="60" y="245" width="80" height="16" rx="8" ry="8" fill="#ED5565"/>
+               <rect x="50" y="270" width="115" height="16" rx="8" ry="8" fill="#A0D468"/>
+                <rect x="40" y="295" width="60" height="16" rx="8" ry="8" fill="#5D9CEC"/>
+                 <rect x="210" y="30" width="190" height="325" fill="#E6E9ED"/>
+               <path d="M210 50 H 375 C 380 50 380 55 380 55 V155 C 380 155 380 160 375 160 H210" fill="#5D9CEC" />
+                
+               <rect x="225" y="180" width="155" height="85" rx="5" ry="5" fill="#5D9CEC"/>
+                <rect x="225" y="278" width="155" height="16" rx="8" ry="8" fill="#CCD1D9"/>
+                 <rect x="225" y="306" width="100" height="16" rx="8" ry="8" fill="#CCD1D9"/>
+                <path d="M 225 158 L 258 115 Q 260 113 262 115 L 295 158 z" stroke-width="4" fill="#545C66" stroke="#545C66" />
+                <path d="M 260 158 L 312 87 Q 315 85 317 87 L 370 158 z" stroke-width="4" fill="#656D78" stroke="#656D78" />
+                <circle cx="255" cy="205" r="10" fill="#FFCE54"/>
+                <path d="M 275 262 L 295 235 Q 298 230 301 235 L 321 262 z" stroke-width="6" fill="#545C66" stroke="#545C66" />
+                <path d="M 295 262 L 326 220 Q 330 215 334 220  L 365 262 z" stroke-width="6" fill="#656D78" stroke="#656D78"/>
+                    <!-- <path d="M61 -9.5487e-05C61.5954 -8.49352e-05 63 -0.055995 65 2L123.5 75.9999H0.5L57.128 2.00003C59 -0.0559685 60.4046 -0.000106039 61 -9.5487e-05Z" fill="#656D78"/> -->
+                    
+            </svg>
+    
+    </main>
+
+    @@include('footer/index.html')
+    <script src="index.js"></script>
+</body>
+</html>
